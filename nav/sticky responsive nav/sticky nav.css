@@ -1,0 +1,82 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  nav {
+    background-color: rgba(0,0,0,.9);
+    padding: 1rem;
+  }
+  
+  a {
+    display: block;
+    text-align: center;
+    font-family: 'Space Mono', monospace;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+    text-decoration: none;
+    padding: .5rem 1rem;
+  }
+  
+  a:hover {
+    color: hsl(0, 0%, 77%);
+    transition: color .15s ease-in-out;
+  }
+  
+  .active {
+    border-radius: 9999px;
+    border: 1px solid hsla(0,0%,100%,.2);
+  }
+  
+  .active:hover {
+    transition: .25s ease-in-out;
+    background-color: white;
+    color: black;
+  }
+  
+  
+  
+  p {
+   
+    font-size: 1rem;
+    font-family: 'Space Mono', monospace;
+    margin-bottom: 1.25rem;
+  }
+  
+  @media (min-width: 768px) {
+  
+  body {
+      width: 60%;
+      margin: 5.25rem auto 1.25rem;
+  }
+  
+  
+  p {
+    margin-bottom: 1.25rem;
+    padding: .5rem;
+  }
+  
+    nav {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+    }
+    
+    nav a {
+      float: right;
+    }
+  
+    .home {
+      float: left;
+    }
+  
+    /* Clearfix */
+      nav::after {
+      content: "";
+      clear: both;
+      display: block;
+    }
+  
+  
+  }

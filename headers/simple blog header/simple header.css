@@ -1,0 +1,30 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  header img {
+    height: 4rem;
+    border: 1px solid rgba(0,0,0,.1);
+    border-radius: 100%;
+    padding: 0.25rem;
+  }
+  
+  header {
+    text-align: center; 
+  }
+  
+  h1 {
+    margin: .67rem 0;
+    font-size: 1.25rem;
+    font-family: Rubik, sans-serif;
+    color: #555;
+  }
+  
+  h2 {
+    font-family: Raleway;
+    text-transform: uppercase;
+    font-size: .875rem;
+    margin-top: 0.7rem;
+    letter-spacing: .1rem;
+    color: #777;
+  }

@@ -1,0 +1,1 @@
+Simple footer component
