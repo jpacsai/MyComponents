@@ -1,0 +1,37 @@
+.wrapper {
+    width: 400px;
+    border: 1px solid red;
+    padding: 15px;
+    position: relative;
+  }
+  
+  
+  .paragraph1, .paragraph3 {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+  
+  .paragraph2 {
+    padding: 20px 0;
+    
+  }
+  
+  .paragraph2::before,
+  .paragraph2::after {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 200px;
+    height: 1px;
+    background-color: #E6E6E6;
+  }
+  
+  .paragraph2::before {
+    top: 240px;
+  }
+  
+  .paragraph2::after {
+    top: 360px;
+  }
