@@ -1,14 +1,16 @@
 // Removes duplicates from array
 
-function removeDuplicate(a) {
-    var i = a.length;
+function removeDuplicate(arr) {
+    var i = arr.length;
     while (i--) {
-      if (a.indexOf(a[i]) != i) {
-        a.splice(i,1);
+      if (arr.indexOf(arr[i]) != i) {
+        arr.splice(i,1);
       }
     }
-    return a;
+    return arr;
   }
   
-  
+  arr.reduce(function(a,b){if(a.indexOf(b)<0)a.push(b);return a;},[]);
+
+
   removeDuplicate([2, 3, 3, 1, 5, 2]);  // [2, 3, 1, 5]
